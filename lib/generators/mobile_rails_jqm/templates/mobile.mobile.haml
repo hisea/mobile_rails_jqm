@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Mobile
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    = stylesheet_link_tag    "mobile"
+    = javascript_include_tag "mobile"
+  %body
+    %div{'data-role'=>"page"}
+      %div{'data-role'=>"header"}
+        %h1 My Title
+
+    %div{'data-role'=>"content"} 
+      %p Hello world    
+      = yield

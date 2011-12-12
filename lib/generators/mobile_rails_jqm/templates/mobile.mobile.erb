@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Mobilee</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <%= stylesheet_link_tag    "mobile" %>
+  <%= javascript_include_tag "mobile" %>
+</head> 
+<body> 
+
+<div data-role="page">
+
+  <div data-role="header">
+    <h1>My Title</h1>
+  </div>
+
+  <div data-role="content"> 
+    <p>Hello world</p>    
+    <%= yield %>
+  </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
