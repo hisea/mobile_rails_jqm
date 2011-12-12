@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Hisea"]
   s.email       = ["zyinghai@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A gem packaged with Jquery Mobile and a generator to work with mobile_rails gem}
+  s.description = %q{A gem packaged with Jquery Mobile and a generator to work with mobile_rails gem}
 
   s.rubyforge_project = "mobile_rails_jqm"
 
