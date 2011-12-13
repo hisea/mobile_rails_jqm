@@ -14,6 +14,11 @@ DESC
         end
         copy_file "mobile.css", "app/assets/stylesheets/mobile.css"
         copy_file "mobile.js", "app/assets/javascripts/mobile.js"
+        
+        inject_into_file 'config/environments/production.rb', :after => "Application.configure do" do
+          "\n\n # Added by mobile_rails_jqm, precompile jQuery Related assets in production."+
+          "\n  config.assets.precompile += %w(mobile.css mobile.js)\n" 
+        end
       end
 
       protected
